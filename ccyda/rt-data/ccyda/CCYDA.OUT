@@ -1,0 +1,54 @@
+ enter decimal=1
+( FROM TERMINAL )
+
+ PASSWORD-
+ BASE NAME- enter text=
+1
+ enter decimal=3
+( TEXT SUBFILES )
+ enter decimal=1
+( RELATION'S NAMES )
+ enter decimal=1
+( TYPE )
+1. M_PD_ECS_TTIM_COMM
+2. M_PD_ECS_TTIM_CHAN
+3. M_PD_ECS_TIMIT
+4. M_PD_ECS_TTIM_STAT
+ enter decimal=0
+! exit from menu
+ enter decimal=0
+! exit from menu
+ enter decimal=8
+( READ DATA )
+ [RELATION] enter text=M_PD_ECS_TTIM_COMM
+ enter decimal=1
+( ALL DATA )
+a=1 t=1 p=1 ASCII TEXT(8)= Chan-01                       
+a=1 t=2 p=1 ASCII TEXT(8)= Chan-02                       
+a=1 t=3 p=1 ASCII TEXT(8)= Chan-03                       
+a=1 t=4 p=1 ASCII TEXT(8)= Chan-04                       
+a=1 t=5 p=1 ASCII TEXT(8)= Chan-05                       
+a=1 t=6 p=1 ASCII TEXT(8)= Chan-06                       
+a=1 t=7 p=1 ASCII TEXT(8)= Chan-07                       
+a=1 t=8 p=1 ASCII TEXT(8)= Chan-08                       
+a=1 t=9 p=1 ASCII TEXT(8)= Chan-09                       
+a=1 t=10 p=1 ASCII TEXT(8)= Chan-10                       
+a=1 t=11 p=1 ASCII TEXT(8)= Chan-11                       
+a=1 t=12 p=1 ASCII TEXT(8)= Chan-12                       
+a=1 t=13 p=1 ASCII TEXT(8)= Chan-13                       
+a=1 t=14 p=1 ASCII TEXT(8)= Chan-14                       
+a=1 t=15 p=1 ASCII TEXT(8)= Chan-15                       
+a=1 t=16 p=1 ASCII TEXT(8)= Chan-16                       
+a=1 t=17 p=1 ASCII TEXT(8)= Chan-17                       
+a=1 t=18 p=1 ASCII TEXT(8)= Chan-18                       
+a=1 t=19 p=1 ASCII TEXT(8)= Chan-19                       
+a=1 t=20 p=1 ASCII TEXT(8)= Chan-20                       
+a=1 t=21 p=1 ASCII TEXT(8)= Chan-21                       
+a=1 t=22 p=1 ASCII TEXT(8)= Chan-22                       
+a=1 t=23 p=1 ASCII TEXT(8)= Chan-23                       
+a=1 t=24 p=1 ASCII TEXT(8)= Chan-24                       
+ enter decimal=0
+! exit from menu
+ [RELATION] enter text=
+ enter decimal=0
+! exit from menu

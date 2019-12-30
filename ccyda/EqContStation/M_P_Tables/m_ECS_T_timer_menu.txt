@@ -1,0 +1,30 @@
+NO_MENU_COMMAND
+
+==============================================================================
+           Menu                      |           Application
+==============================================================================
+ 1 user priority                     | 1    next task number (for packet task)
+ 2 next menu type (1-menu, 2-task)   | 2    task name       (20)
+ 3 reference                         | 3    bmp-file name   (20)
+   (0-empty, menus/task plane number)| 4    host name       (16)
+ 4 menu string text (26)             | 5    task type
+ 5 reference to graphical element    |      (1:usual,2/4:P/Tview,8:EC,10:ed,
+ 6 reference to Russian text         |       20/40:rsOn/Of,80:cold,100:bmp)
+ 7 reference to dangerous menu item  | 6    reference to cold data
+ 8 exclusive user1 number            | 7    command string  (60)
+ 9 exclusive user2 number            | 8,11 P-,T-table name (20)
+10 exclusive user3 number            | 9,12 P-,T-table plane
+                                     |10,13 P-,T-table tuple
+==============================================================================
+U-70:Control Systems
+        1    2   3   4                      5   6     7   8   9   10
+>Menu @ 00 @ 1 @ 0 @ T_timer & Imitator @ 0 @ 259 @ 0 @ 0 @ 0 @ 0
+>>Menu @ 01 @ 2 @ 0 @ T_timer channels @ 0 @ 260 @ 0 @ 0 @ 0 @ 0
+>>>Appl @ 0 @  @  @  @ 092 @ 0 @ PL= +AP @ M_PM_ECS_TTIM_IMIT @ 1 @ 1 @  @ 0 @ 0
+
+>>Menu @ 01 @ 2 @ 0 @ Imitator parameters @ 0 @ 261 @ 0 @ 0 @ 0 @ 0
+>>>Appl @ 0 @  @  @  @ 092 @ 0 @ PL= +AP @ M_PM_ECS_TTIM_IMIT @ 1 @ 2 @  @ 0 @ 0
+
+>
+
+

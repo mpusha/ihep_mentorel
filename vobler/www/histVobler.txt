@@ -1,0 +1,6 @@
+control program start from user work
+voblerCtrl anjd setup.ini file must be placed in /home/work/vobler
+folder webix in /var/wwww/html
+folder vobler in /var/www/html
+1_3 old work version.
+1_4 work version. Change odd even memory access.

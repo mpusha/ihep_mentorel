@@ -1,0 +1,191 @@
++“‘—ƒ”“ÿ“°
+
+1
+INCLUDE REL.
+=U70_MENUS
+10 18 1000
+=TABLE
+=GLOBAL
+=ssuda
+=! exit from menu
+
+=SOMEBODY'S
+=+“‘—ƒ”“ÿ“°°°°°°°°
+BY NAME
+=str1
+BY NAME
+=str2
+BY NAME
+=str3
+BY NAME
+=str4
+BY NAME
+=str5
+BY NAME
+=str6
+BY NAME
+=str7
+BY NAME
+=str8
+BY NAME
+=str9
+BY NAME
+=str10
+BY NAME
+=str11
+BY NAME
+=str12
+BY NAME
+=str13
+BY NAME
+=str14
+BY NAME
+=str15
+BY NAME
+=str16
+BY NAME
+=str17
+BY NAME
+=str18
+=8-BIT INTEGER
+BY NAME
+=access
+=8-BIT INTEGER
+BY NAME
+=type
+=16-BIT INTEGER
+BY NAME
+=menu_task_num
+=ASCII TEXT
+26
+BY NAME
+=legend
+=16-BIT INTEGER
+BY NAME
+=graph
+=16-BIT INTEGER
+BY NAME
+=russian
+=16-BIT INTEGER
+BY NAME
+=reserve
+=16-BIT INTEGER
+BY NAME
+=User_1
+=16-BIT INTEGER
+BY NAME
+=User_2
+=16-BIT INTEGER
+BY NAME
+=User_3
+INCLUDE REL.
+=U70_STATUS_TEXT
+16 18 1
+=MATRIX
+=GLOBAL
+=pcoku3
+=! exit from menu
+
+=SOMEBODY'S
+=+“‘—ƒ”“ÿ“°°°°°°°°
+BY NAME
+=str1
+BY NAME
+=str2
+BY NAME
+=str3
+BY NAME
+=str4
+BY NAME
+=str5
+BY NAME
+=str6
+BY NAME
+=str7
+BY NAME
+=str8
+BY NAME
+=str9
+BY NAME
+=str10
+BY NAME
+=str11
+BY NAME
+=str12
+BY NAME
+=str13
+BY NAME
+=str14
+BY NAME
+=str15
+BY NAME
+=str16
+BY NAME
+=str17
+BY NAME
+=str18
+=ASCII TEXT
+14
+BY NAME
+=status1
+=ASCII TEXT
+10
+BY NAME
+=status2
+=ASCII TEXT
+10
+BY NAME
+=status3
+=ASCII TEXT
+10
+BY NAME
+=status4
+=ASCII TEXT
+10
+BY NAME
+=status5
+=ASCII TEXT
+10
+BY NAME
+=status6
+=ASCII TEXT
+10
+BY NAME
+=status7
+=ASCII TEXT
+10
+BY NAME
+=status8
+=ASCII TEXT
+10
+BY NAME
+=status9
+=ASCII TEXT
+10
+BY NAME
+=status10
+=ASCII TEXT
+10
+BY NAME
+=status11
+=ASCII TEXT
+10
+BY NAME
+=status12
+=ASCII TEXT
+10
+BY NAME
+=status13
+=ASCII TEXT
+10
+BY NAME
+=status14
+=ASCII TEXT
+10
+BY NAME
+=status15
+=ASCII TEXT
+10
+BY NAME
+=status16
+!

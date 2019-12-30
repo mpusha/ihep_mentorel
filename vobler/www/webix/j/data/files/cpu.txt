@@ -1,0 +1,14 @@
+[23102]
+Mentorel uSomIQ BoneCape Baseboard V4
+- Mates with uSomIQ AM335x System On Module
+- Compatible with most BeagleBone Expansion capes
+- Software compatibility with BeagleBone/Black
+- Industrial operating temperature: -40°C to +85°C        30$  http://www.mentorel.com/product/usomiq-bonecape/\
+
+
+[23205]
+Mentorel uSomIQ AM3357 System On Module
+- Processor: AM3357 Cortex-A8 800MHz (Dual PRU-ICSS)
+- DRAM: mobile-DDR3 512MB
+- Flash: SLC NAND 1GB
+- Industrial operating temperature: -40°C to +85°C        90$  http://www.mentorel.com/product/usomiq-am335x/

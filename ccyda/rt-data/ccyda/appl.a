@@ -1,0 +1,61 @@
++“‘—ƒ”“ÿ“°
+
+1
+INCLUDE REL.
+=U70_APPLICATIONS
+13 1 1000
+=TABLE
+=GLOBAL
+=ssuda
+=! exit from menu
+
+=SOMEBODY'S
+=+“‘—ƒ”“ÿ“°°°°°°°°
+BY NAME
+=ProgInfo
+=16-BIT INTEGER
+BY NAME
+=NextTask
+=ASCII TEXT
+20
+BY NAME
+=ProgName
+=ASCII TEXT
+20
+BY NAME
+=BMPName
+=ASCII TEXT
+16
+BY NAME
+=HostName
+=16-BIT INTEGER
+BY NAME
+=ProgType
+=16-BIT INTEGER
+BY NAME
+=ToRegimes
+=ASCII TEXT
+60
+BY NAME
+=Parameters
+=ASCII TEXT
+20
+BY NAME
+=PTabName
+=16-BIT INTEGER
+BY NAME
+=Plane
+=16-BIT INTEGER
+BY NAME
+=Tuple
+=ASCII TEXT
+20
+BY NAME
+=TTabName
+=16-BIT INTEGER
+BY NAME
+=Plane
+=16-BIT INTEGER
+BY NAME
+=Tuple
+!

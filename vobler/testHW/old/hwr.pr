@@ -1,0 +1,29 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2017-03-09T11:44:09
+#
+#-------------------------------------------------
+
+QT       += core
+VERSION = 1.00.00
+
+#version 1.00.00 begin
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
+
+#include (config.pro)
+
+TARGET = testHW
+TEMPLATE = app console
+CONFIG += exception
+MOC_DIR = moc
+OBJECTS_DIR = obj
+
+SOURCES += main.cpp\
+          hw.cpp \
+          spi.c \
+          SimpleGPIO.cpp
+
+HEADERS +=hw.h \
+          spi.h \
+          SimpleGPIO.h
+DESTDIR = ../$${CURRENT_BUILD}

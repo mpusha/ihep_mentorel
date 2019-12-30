@@ -1,0 +1,33 @@
+cc -c custom.c
+cc -c ioshr.c
+cc -c dbdial.c
+cc -c numnam.c
+cc -c nam.c
+cc -c extend.c
+cc -c datrw.c
+cc -c rlprint.c
+cc -c indl.c
+cc -c incdsc.c
+cc -c incdsd.c
+cc -c ini.c
+cc -c dscstd.c
+cc -c tables.c
+cc -c for_ssuda.c
+
+cc  dbver.c numnam.o ioshr.o dbdial.o custom.o
+mv a.out dbver
+
+cc  dsc.c dscstd.o incdsc.o rlprint.o indl.o datrw.o extend.o nam.o numnam.o ioshr.o custom.o tables.o for_ssuda.o
+mv a.out dsc
+
+cc dsd.c dscstd.o incdsd.o indl.o tables.o datrw.o extend.o nam.o numnam.o ioshr.o custom.o 
+mv a.out dsd
+
+cc mdtd.c dscstd.o indl.o datrw.o numnam.o tables.o nam.o ioshr.o custom.o extend.o
+mv a.out mdtd
+
+cc manpas.c dscstd.o indl.o datrw.o numnam.o tables.o nam.o ioshr.o custom.o extend.o
+mv a.out manpas
+
+cc  -o edin edin.c dscstd.o indl.o datrw.o extend.o nam.o numnam.o ioshr.o custom.o
+

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <style>
+      webix_message_area{  top:100px !important;   left:100px; }
+    </style>
+    <head>
+       <link rel="stylesheet" href="../lib/codebase/skins/compact.css" type="text/css">
+       <link rel="stylesheet" href="css/main.css" type="text/css">
+       <script src="../lib/codebase/webix.js" type="text/javascript"></script>
+       <script src="../lib/codebase/i18n/en.js" type="text/javascript"></script>
+       <script src="../lib/codebase/i18n/ru.js" type="text/javascript"></script>
+
+       <!--application files-->
+        <script type="text/javascript" src='./js/internalization.js'></script> 
+        <script type="text/javascript" src='./js/logic.js'></script>
+        <script type="text/javascript" src='./js/app.js'></script> 
+    </head>
+
+       <div id="formContainer" style="width:1024px; height:768px; margin:10px;"></div>
+    <body>
+    <script>
+      webix.ready(function(){
+          logic.init(); //reference to logic section 
+        });
+    </script>
+    </body>
+</html>

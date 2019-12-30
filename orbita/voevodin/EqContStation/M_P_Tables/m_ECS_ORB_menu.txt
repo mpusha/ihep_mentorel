@@ -1,0 +1,60 @@
+NO_MENU_COMMAND
+
+==============================================================================
+           Menu                      |           Application
+==============================================================================
+ 1 user priority                     | 1    next task number (for packet task)
+ 2 next menu type (1-menu, 2-task)   | 2    task name       (20)
+ 3 reference                         | 3    bmp-file name   (20)
+   (0-empty, menus/task plane number)| 4    host name       (16)
+ 4 menu string text (26)             | 5    task type
+ 5 reference to graphical element    |      (1:usual,2/4:P/Tview,8:EC,10:ed,
+ 6 reference to Russian text         |       20/40:rsOn/Of,80:cold,100:bmp,200:ECS)
+ 7 reference to dangerous menu item  | 6    reference to cold data
+ 8 exclusive user1 number            | 7    command string  (60)
+ 9 exclusive user2 number            | 8,11 P-,T-table name (20)
+10 exclusive user3 number            | 9,12 P-,T-table plane
+                                     |10,13 P-,T-table tuple
+==============================================================================
+U-70:Diagnostic Systems
+        1    2   3   4                5   6     7   8   9   10
+>Menu @ 00 @ 1 @ 0 @ Orbit   @ 0 @ 146 @ 0 @ 0 @ 0 @ 0
+>>Menu @ 1 @ 2 @ 0 @ Control  @ 0 @ 29 @ 0 @ 0 @ 0 @ 0
+>>>Appl @ 0 @  @  @  @ 292 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 1 @  @ 0 @ 0
+>>Menu @ 0 @ 1 @ 0 @ Measurement  @ 0 @ 27 @ 0 @ 0 @ 0 @ 0
+>>>Menu @ 0 @ 1 @ 0 @ R orbit  @ 0 @ 7 @ 0 @ 0 @ 0 @ 0
+>>>>Menu @ 0 @ 1 @ 0 @ Current orbit  @ 0 @ 262 @ 0 @ 0 @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Axes    @ 0 @ 265 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 2 @  @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Harmonics  @ 0 @ 266 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 3 @  @ 0 @ 0
+>>>>Menu @ 0 @ 1 @ 0 @ Previous orbit  @ 0 @ 263 @ 0 @ 0 @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Axes    @ 0 @ 265 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 4 @  @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Harmonics  @ 0 @ 266 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 5 @  @ 0 @ 0
+>>>>Menu @ 0 @ 1 @ 0 @ Math  @ 0 @ 264 @ 0 @ 0 @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Axes    @ 0 @ 265 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 6 @  @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Harmonics  @ 0 @ 266 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 7 @  @ 0 @ 0
+>>>Menu @ 0 @ 1 @ 0 @ Z orbit  @ 0 @ 8 @ 0 @ 0 @ 0 @ 0
+>>>>Menu @ 0 @ 1 @ 0 @ Current orbit  @ 0 @ 262 @ 0 @ 0 @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Axes    @ 0 @ 265 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 8 @  @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Harmonics  @ 0 @ 266 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 9 @  @ 0 @ 0
+>>>>Menu @ 0 @ 1 @ 0 @ Previous orbit  @ 0 @ 263 @ 0 @ 0 @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Axes    @ 0 @ 265 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 10 @  @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Harmonics  @ 0 @ 266 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 11 @  @ 0 @ 0
+>>>>Menu @ 0 @ 1 @ 0 @ Math  @ 0 @ 264 @ 0 @ 0 @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Axes    @ 0 @ 265 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 12 @  @ 0 @ 0
+>>>>>Menu @ 0 @ 2 @ 0 @ Harmonics  @ 0 @ 266 @ 0 @ 0 @ 0 @ 0
+>>>>>>Appl @ 0 @  @  @  @ 202 @ 0 @ PL= +AP @ M_PM_ECS_ORB @ 1 @ 13 @  @ 0 @ 0
+
+>
+
+

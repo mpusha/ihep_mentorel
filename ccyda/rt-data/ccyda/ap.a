@@ -1,0 +1,52 @@
++ртядсрьр║
+
+3
+INCLUDE REL.
+=B_PP_ECS_MG_MEAS_1
+11 1 1
+=TABLE
+=GLOBAL
+=mgu15
+=! exit from menu
+
+=NOBODY'S
+BY NAME
+=str1
+=HEXADECIMAL
+2
+BY NAME
+=flag1
+=HEXADECIMAL
+2
+BY NAME
+=flag2
+=16-BIT INTEGER
+BY NAME
+=copy
+=ASCII TEXT
+16
+BY NAME
+=Parameters
+=ASCII TEXT
+10
+BY NAME
+=OutFormat
+=16-BIT INTEGER
+BY NAME
+=ParamNum
+=16-BIT INTEGER
+BY NAME
+=VarType
+=16-BIT INTEGER
+BY NAME
+=res
+=16-BIT INTEGER
+BY NAME
+=Control
+=64-BIT REAL
+BY NAME
+=Min
+=64-BIT REAL
+BY NAME
+=Max
+!

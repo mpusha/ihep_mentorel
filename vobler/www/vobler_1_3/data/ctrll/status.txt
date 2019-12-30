@@ -1,0 +1,3 @@
+[
+{ 'power':"On", 'error':"None", 'update':1  }
+]
