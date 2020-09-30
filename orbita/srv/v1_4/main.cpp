@@ -284,7 +284,12 @@ int main(int argc, char *argv[])
 
   QCoreApplication a(argc,argv);
   signal(SIGINT,child_handler); //set ctrl-c remove in release!!!! to console app only
-  db=new TDbBehav();
+  db=0;
+  int simple=0;
+  if(argc>2){
+    if(!strcmp(argv[2],"simple")) simple=1;
+  }
+  if(!simple) db=new TDbBehav();
   if(db) {
     if(!db->getDBStatus()){
       orb=new TOrbBehav();
@@ -302,6 +307,8 @@ int main(int argc, char *argv[])
       // start simple orb program
       printf("Can't initialize DB. Program HW start in simple mode.\n");
       syslog( LOG_INFO,"Can't initialize DB. Program HW start in simple mode.");
+      orb=new TOrbBehav();
+      if(orb) orb->start(QThread::NormalPriority);
       // start  program without DB in simple mode
     }
   }
@@ -309,6 +316,8 @@ int main(int argc, char *argv[])
     // start simple orb program
     printf("Can't create TDbBehav object. Program HW start in simple mode.\n");
     syslog( LOG_INFO,"Can't create TDbBehav object. Program HW start in simple mode.");
+    orb=new TOrbBehav();
+    if(orb) orb->start(QThread::NormalPriority);
     // start  program without DB in simple mode
 
   }

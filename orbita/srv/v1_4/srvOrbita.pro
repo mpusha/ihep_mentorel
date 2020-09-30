@@ -14,7 +14,7 @@
 # 1.30 01.10.2019 cosmetical. remove //
 # 1.40 21.10.2019 in main.cpp events processing change! 
 #   11.11.19 in main demonize() remove getppid. was error in work with systemd (start from init with pid=1)
-
+# 30.09.2020 in main.cpp add realisation for simple mode by simple keyword in command string strcmp(argv[2],"simple")
 QT       += core
 QT       += network
 QT       -= gui
