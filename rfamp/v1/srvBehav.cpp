@@ -284,7 +284,7 @@ void TDtBehav::getRequests()
     setings.beginGroup("request");
     selFile=setings.value("fname","").toString();
     if(selFile.size()) wrDataReq=true; else statusReq="File Absent";
-    if(wrDataReq) statusReq="Processing";
+    if(wrDataReq) statusReq="Wait write data";
     //if(wrDataReq) statusReq="\"1\"";
     setings.endGroup();
     QFile::remove(workDirName+"data/ctrl/update_data.req");
@@ -404,7 +404,7 @@ void TDtBehav::wrDataReadData(bool withWr)
     }
     qDebug()<<"Writeen "<<selFile;
     dev->usr_pdOff(); // on ps after write
-    statusReq="Data written";
+    statusReq="Ready";
     //statusReq="\"2\"";
   }
   else {

@@ -7,4 +7,4 @@ CONFIG(release, debug|release) {CURRENT_BUILD = Run_project_release}
 CONFIG(debug, debug|release) {SUFFIX =  d}
 CONFIG(release, debug|release) {SUFFIX =}
 
-CONFIG(release, debug|release) {DEFINES += QT_NO_DEBUG_OUTPUT}
+#CONFIG(release, debug|release) {DEFINES += QT_NO_DEBUG_OUTPUT}
