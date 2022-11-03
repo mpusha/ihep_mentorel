@@ -139,6 +139,7 @@ void TDtBehav::run()
           syslog(LOG_INFO,"Hw version %d",hw);
           qDebug()<<"Initialisation of device was finished successfully.";
           qDebug()<<"Hw version"<<hw;
+
           timerAlrm=true;
         }
         break;
@@ -154,7 +155,7 @@ void TDtBehav::run()
         if(stErr>::CODEERR::NONE_ALARM) {
           cntErrReq=0;
           //syslog(LOG_ERR,"None alarm error. HW %d Sample %d Strobe %d Status %d",dev->usr_getHW(),dev->usr_RdSample(),dev->usr_RdStrobe(),dev->usr_RdStatus());
-          allStates[UPDATE_HW_STATE]=UPDATE_STATUS_STATE;
+          allStates[UPDATE_HW_STATE]=UPDATE_STATUS_STATE;//UPDATE_HW_STATE;stErr=0;//UPDATE_STATUS_STATE;
           phase=READY;
           break;
         }
@@ -371,7 +372,7 @@ void TDtBehav::updateHW(void)
 // write into HW power on off
     //powerStatus=powerValue;    //for test only
     wrHWReq=false; // request compleated
-
+powerValue=1; // mode 3 bit switch on rnd!
     int mode=((powerValue&2)<<1)|((powerValue&1)<<1)|(powerValue&1);
     if(powerValue) {dev->usr_waitCanRead(); dev->usr_writeMode(mode); } else dev->usr_writeMode(0);
     qDebug()<<"Set power on/off request. Set power value and mode"<<powerValue<<mode;
@@ -394,7 +395,7 @@ void TDtBehav::wrDataReadData(bool withWr)
 {
 
   if(withWr){
-    dev->usr_pdOn(); //off ps
+    //dev->usr_pdOn(); //off ps
     qDebug()<<"Write "<<selFile;
     if(!selFile.size()){  statusReq="File absent"; devError.setDevError(TDevErrors::INFILE_ERROR);return; }
 

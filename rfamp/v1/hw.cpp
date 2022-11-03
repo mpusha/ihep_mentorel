@@ -565,7 +565,7 @@ void THw::usr_waitCanWrite(void)
   while(true){
     reg=SPI_readReg(R_STATUS_REG);
     if(reg&0x10) { qDebug()<<"SYNCHR";break;} // synchronisation is absent. Can write data
-    if((reg&0x20)&&tm) { timer.start(2000); tm=false; }
+    if((reg&0x40)&&tm) { timer.start(2000); tm=false; }
     if(canWr) { qDebug()<<"CAN WRITE";break;}
     m_sleep(1);
   }
