@@ -78,7 +78,7 @@ void TTimerBehave::run()
   while(!abort){
     cnt++;
     cnt&=0x1f;
-    if(cnt&0x10) gpio_set_value(PIN_SYSACT,HIGH); else gpio_set_value(PIN_SYSACT,LOW);
+    if(cnt&0x10) gpio_set_value(PIN_SYSACT,HIGH); else gpio_set_value(PIN_SYSACT,LOW);  //LED SYSTEM on front panel
     msleep(50);
     loop->processEvents();
     if(phase==IDLE) {
@@ -207,7 +207,11 @@ void TTimerBehave::collectStatus(void)
     int addr=xmlData.tdata[i].address;
     if(xmlData.tdata[i].tenable) { // timer enable in xml file
       timerHw->setAddress(addr);
-      if(!(timerHw->testAlive())) { //allive
+      int alive=timerHw->testAlive();
+      //qDebug()<<alive;
+      if(!alive) { //allive
+      // qDebug()<<timerHw->sendReadRawCmd("GF");
+      //msleep(10);
         status.setStatus("Ok "+timerHw->sendReadRawCmd("GF"));//get firmware version
         mapTimers[i]=true;
       }

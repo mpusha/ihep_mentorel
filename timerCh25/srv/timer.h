@@ -38,7 +38,7 @@
 #define MINDATA 10L
 #define MAXDATA 12000000L
 #define MINWIDTH 10L
-#define MAXWIDTH 5000000L
+#define MAXWIDTH 3000000L
 #define RS_DELAY 2000L // delay in us for RS485 trans rec operation
 void msleep(uint64_t ms);
 

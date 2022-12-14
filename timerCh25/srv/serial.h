@@ -13,7 +13,7 @@
 #include <QDebug>
 
 #define UART_TIMEOUT 1000L  //delay in ms
-#define UART_SHORT_TOUT 20L
+#define UART_SHORT_TOUT 100L
 
 class TSerial
 {

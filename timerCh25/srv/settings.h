@@ -2,9 +2,11 @@
 #define SETTINGS_H
 
 #include <QString>
+#include "timer.h"
+
 #define MAX_NUM_TIMERS 10  // maximal number of timers
 #define MAX_NUM_CH 16 // maximal number of channels
-const int MIN_TIME=10,MAX_TIME=10000000,MIN_WIDTH=10,MAX_WIDTH=2000000;
+const int MIN_TIME=MINDATA,MAX_TIME=MAXDATA,MIN_WIDTH=MINWIDTH,MAX_WIDTH=MAXWIDTH;
 
 
 struct STimerData {
