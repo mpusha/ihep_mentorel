@@ -1,0 +1,4 @@
+#! /bin/bash
+#. cs-setup
+make
+scp spi root@172.18.0.9:

@@ -1,0 +1,6 @@
+#! /bin/bash
+#. cs-setup
+. /home/serg/bbb/qt4.8.6/es
+qmake $1
+make
+#scp spi root@172.18.0.9:
