@@ -407,7 +407,7 @@ bool THw::usr_waitCanWrite(void)
     usr_hostWd();
     reg=SPI_readReg(R_STATUS_REG);
     if(reg&0x10) { qDebug()<<"SYNCHR ERROR";break;} // synchronisation is absent.
-    if((reg&0x20)&&tm) { timer.start(2000); tm=false; }
+    if((reg&0x40)&&tm) { timer.start(20); tm=false; }
     //if((reg&0x40)&&tm) { timer.start(2000); tm=false; }
     if(canWr) { qDebug()<<"SYNCHR OK.";break;}
     m_sleep(5);

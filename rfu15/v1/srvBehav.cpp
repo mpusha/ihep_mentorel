@@ -353,10 +353,12 @@ int TSrvBehav::wrHWsimple(void)
     syslog(LOG_INFO,"Hw version %d",hw);
     qDebug()<<"Initialisation of device in simple mode was finished successfully.";
     qDebug()<<"Hw version"<<hw;
+    qDebug()<<"Wait sync";
     if(!dev->usr_waitCanWrite()) { //absent synchronisation
       syslog(LOG_INFO,"Absent synchronisation");
       qDebug()<<"Absent synchronisation";
     }
+    qDebug()<<"Sync ok";
     dev->usr_writeMode(3);
     if(dev->usr_WrDACFile(fileNameCSV)) {
       syslog(LOG_INFO,"Work CSV file is absent. %s",fileNameCSV.toAscii().data());
